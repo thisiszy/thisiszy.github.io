@@ -1,42 +1,46 @@
 ---
 title: "Hello World"
-date: 2016-06-10 23:00
+date: 
 tags:
- - Movies
- - Life
+ - test
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+This is the first post and just for test markdown function.
 
-## Quick Start
+# main title
+## second title
+### third title
+#### forth title
+##### fifth title
+###### sixth title
+> quate
+> newline
 
-### Create a new post
+line
+line2
 
-``` bash
-$ hexo new "My New Post"
+line3
+
+```python
+import os
+def func(a, b):
+    return a + b
+
+func(10, 1)
 ```
 
-More info: [Writing](https://hexo.io/docs/writing.html)
+inline math block $\sum_{i=0}^n\frac{1}{i^2}$
 
-### Run server
+math block
+$$\sum_{i=0}^n\frac{1}{i^2}$$
 
-``` bash
-$ hexo server
-```
+### Solar System Exploration, 1950s – 1960s
 
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+- [ ] Mercury
+- [x] Venus
+- [x] Earth (Orbit/Moon)
+- [x] Mars
+- [ ] Jupiter
+- [ ] Saturn
+- [ ] Uranus
+- [ ] Neptune
+- [ ] Comet Haley
