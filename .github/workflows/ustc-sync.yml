@@ -18,28 +18,23 @@ jobs:
         node_version: [12.x]
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
       - name: Checkout deploy repo
         uses: actions/checkout@v2
         with:
           repository: ${{ env.DEPLOY_REPO }}
           ref: ${{ env.DEPLOY_BRANCH }}
-          path: .deploy_git
-          submodules: true
+          path: .
+          submodules: recursive
 
       - name: Use Node.js ${{ matrix.node_version }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node_version }}
 
-      - name: Install dependencies
+      - name: Install dependencies && Generate hexo
         run: |
+          ls -a
           npm install
-
-      - name: Generate hexo
-        run: |
           npm install hexo-cli -g
           rm _config.yml
           mv config2.yml _config.yml
