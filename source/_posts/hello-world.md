@@ -1,7 +1,6 @@
 ---
 title: "Hello World"
 date: 2016-06-10 23:00
-banner: your-banner-link.jpg
 tags:
  - Movies
  - Life
