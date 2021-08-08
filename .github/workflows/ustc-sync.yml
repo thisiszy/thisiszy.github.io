@@ -44,10 +44,10 @@ jobs:
           hexo generate
           ls
 
-    - name: FTP-Deploy
-      uses: SamKirkland/FTP-Deploy-Action@3.1.1
-      with:
-        ftp-server: ftp://home.ustc.edu.cn/
-        ftp-username: ${{ secrets.HEXO_DEPLOY_USER }}
-        ftp-password: ${{ secrets.HEXO_DEPLOY_PWD }}
-        local-dir: public
+      - name: FTP-Deploy
+        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        with:
+          ftp-server: ftp://home.ustc.edu.cn/
+          ftp-username: ${{ secrets.HEXO_DEPLOY_USER }}
+          ftp-password: ${{ secrets.HEXO_DEPLOY_PWD }}
+          local-dir: public
