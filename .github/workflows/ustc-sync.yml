@@ -46,11 +46,11 @@ jobs:
           git reset --hard
 
       - name: FTP-Deploy
-        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        uses: sebastianpopp/ftp-action@releases/v2
         with:
-          ftp-server: ftp://home.ustc.edu.cn/
-          ftp-username: ${{ secrets.HEXO_DEPLOY_USER }}
-          ftp-password: ${{ secrets.HEXO_DEPLOY_PWD }}
-          local-dir: public
+          host: ftp://home.ustc.edu.cn/
+          user: ${{ secrets.HEXO_DEPLOY_USER }}
+          password: ${{ secrets.HEXO_DEPLOY_PWD }}
+          localDir: public
           remoteDir: public
           forceSsl: true
