@@ -38,11 +38,12 @@ jobs:
         run: |
           npm install
 
-      - name: Deploy hexo
+      - name: Generate hexo
         run: |
           npm install hexo-cli -g
+          rm _config.yml
+          mv config2.yml _config.yml
           hexo generate
-          ls
           git reset --hard
 
       - name: FTP-Deploy
@@ -52,5 +53,5 @@ jobs:
           user: ${{ secrets.HEXO_DEPLOY_USER }}
           password: ${{ secrets.HEXO_DEPLOY_PWD }}
           localDir: public
-          remoteDir: public
+          remoteDir: public_html
           forceSsl: true
