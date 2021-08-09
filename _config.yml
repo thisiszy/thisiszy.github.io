@@ -103,3 +103,7 @@ theme: vexo
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+# Local Search Support
+local_search:
+  enable: true
