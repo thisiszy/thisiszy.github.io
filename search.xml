@@ -2,27 +2,36 @@
 <search>
   <entry>
     <title>Hello World</title>
-    <url>/2021/08/09/hello-world/</url>
+    <url>/2021/08/hello-world/</url>
     <content><![CDATA[<p>This is the first post and just for test markdown function.</p>
-<h1 id="main-title"><a href="#main-title" class="headerlink" title="main title"></a>main title</h1><h2 id="second-title"><a href="#second-title" class="headerlink" title="second title"></a>second title</h2><h3 id="third-title"><a href="#third-title" class="headerlink" title="third title"></a>third title</h3><h4 id="forth-title"><a href="#forth-title" class="headerlink" title="forth title"></a>forth title</h4><h5 id="fifth-title"><a href="#fifth-title" class="headerlink" title="fifth title"></a>fifth title</h5><h6 id="sixth-title"><a href="#sixth-title" class="headerlink" title="sixth title"></a>sixth title</h6><blockquote>
-<p>quate<br>newline</p>
+<h1>main title</h1>
+<h2 id="second-title">second title</h2>
+<h3 id="third-title">third title</h3>
+<h4 id="forth-title">forth title</h4>
+<h5 id="fifth-title">fifth title</h5>
+<h6 id="sixth-title">sixth title</h6>
+<blockquote>
+<p>quate<br>
+newline</p>
 </blockquote>
-<p>line<br>line2</p>
+<p>line<br>
+line2</p>
 <p>line3</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">func</span>(<span class="params">a, b</span>):</span></span><br><span class="line">    <span class="keyword">return</span> a + b</span><br><span class="line"></span><br><span class="line">func(<span class="number">10</span>, <span class="number">1</span>)</span><br></pre></td></tr></table></figure>
-
 <p>inline math block $\sum_{i=0}^n\frac{1}{i^2}$</p>
-<p>math block<br>$$\sum_{i=0}^n\frac{1}{i^2}$$</p>
-<h3 id="Solar-System-Exploration-1950s-–-1960s"><a href="#Solar-System-Exploration-1950s-–-1960s" class="headerlink" title="Solar System Exploration, 1950s – 1960s"></a>Solar System Exploration, 1950s – 1960s</h3><ul>
-<li><input disabled="" type="checkbox"> Mercury</li>
-<li><input checked="" disabled="" type="checkbox"> Venus</li>
-<li><input checked="" disabled="" type="checkbox"> Earth (Orbit/Moon)</li>
-<li><input checked="" disabled="" type="checkbox"> Mars</li>
-<li><input disabled="" type="checkbox"> Jupiter</li>
-<li><input disabled="" type="checkbox"> Saturn</li>
-<li><input disabled="" type="checkbox"> Uranus</li>
-<li><input disabled="" type="checkbox"> Neptune</li>
-<li><input disabled="" type="checkbox"> Comet Haley</li>
+<p>math block<br>
+$$\sum_{i=0}^n\frac{1}{i^2}$$</p>
+<h3 id="Solar-System-Exploration-1950s-–-1960s">Solar System Exploration, 1950s – 1960s</h3>
+<ul>
+<li>[ ] Mercury</li>
+<li>[x] Venus</li>
+<li>[x] Earth (Orbit/Moon)</li>
+<li>[x] Mars</li>
+<li>[ ] Jupiter</li>
+<li>[ ] Saturn</li>
+<li>[ ] Uranus</li>
+<li>[ ] Neptune</li>
+<li>[ ] Comet Haley</li>
 </ul>
 ]]></content>
       <tags>
