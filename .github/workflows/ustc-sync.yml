@@ -36,8 +36,9 @@ jobs:
           ls -a
           npm install
           npm install hexo-cli -g
-          rm _config.yml
-          mv config2.yml _config.yml
+          sed -i "s/url: https:\/\/thisiszy.github.io\//url: http:\/\/home.ustc.edu.cn\/~hzy_ustc\//g" _config.yml
+          sed -i "s/root: \//root: \/~hzy_ustc\//g" _config.yml
+          sed -i "s/\s.*fetch('' + searchPath)/    fetch('~hzy_ustc' + searchPath)/g" ../themes/vexo/source/js/local-search.js
           hexo generate
           git reset --hard
 
